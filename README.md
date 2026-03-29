@@ -124,13 +124,23 @@ End-to-end ATS workflow showing resume upload, document parsing, text normalizat
 ---
 
 
-<table width="100%"> <tr> <td width="33%" align="center" valign="top">
-<h3>🌐 Main Web Interface</h3>
-<img src="img/WEBPAGE.png" width="95%" /> <p> <i> Primary landing page where users upload resumes, paste job descriptions, and start ATS-style analysis instantly. </i> </p> </td> <td width="33%" align="center" valign="top">
-<h3>📊 ATS Match Results</h3>
-<img src="img/texteg.png" width="95%" /> <p> <i> Displays match percentage, skill alignment, and AI-powered resume improvement suggestions in a recruiter-friendly format. </i> </p> </td> <td width="33%" align="center" valign="top">
-<h3>📄 PDF & DOCX Parsing</h3>
-<img src="img/pdfeg.png" width="95%" /> <p> <i> Demonstrates real resume parsing from PDF and DOCX files using Apache PDFBox and Apache POI. </i> </p> </td> </tr> </table>
+<table width="100%">
+<tr>
+<td align="center" valign="top">
+
+<h3>🌐 Application Interface</h3>
+
+<img src="img/webpage.png" width="90%" />
+
+<p>
+<i>
+Clean and interactive UI where users upload resumes, enter job descriptions, and get instant ATS-style analysis including match score, skill gaps, and suggestions.
+</i>
+</p>
+
+</td>
+</tr>
+</table>
 
 -----------------
 
@@ -166,10 +176,10 @@ RESUME-ANALYZER/
 │   └── test/
 │       └── java/com/yourpackage/resumeanalyzer/
 ├── img/
-│   ├── architecture.png
-│   ├── webpage.png
-│   ├── text_example.png
-│   └── pdf_example.png
+│   ├── Architecture.png
+│   ├── Webpage.png
+│   
+│   
 ├── pom.xml
 ├── mvnw
 └── README.md
