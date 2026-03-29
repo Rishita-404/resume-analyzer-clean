@@ -130,7 +130,9 @@ End-to-end ATS workflow showing resume upload, document parsing, text normalizat
 
 <h3>🌐 Application Interface</h3>
 
-<img src="img/webpage.png" width="90%" />
+<p align="center">
+  <img src="./img/webpage.png" width="80%" />
+</p>
 
 <p>
 <i>
@@ -177,7 +179,7 @@ RESUME-ANALYZER/
 │       └── java/com/yourpackage/resumeanalyzer/
 ├── img/
 │   ├── Architecture.png
-│   ├── Webpage.png
+│   ├── webpage.png
 │   
 │   
 ├── pom.xml
