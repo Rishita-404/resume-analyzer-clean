@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="main-container">
+
+    <h1 class="main-title">🚀 Resume Analyzer</h1>
+
+    <div class="card">
+
+        <!-- Resume Section -->
+        <div class="section-header">
+            <span>📄 Resume</span>
+        </div>
+
+        <input type="file" id="resumeFile" accept=".pdf,.doc,.docx,.txt">
+
+        <textarea id="resumeText" placeholder="Paste resume text..."></textarea>
+
+        <!-- Job Description -->
+        <div class="section-header">
+            <span>📄 Job Description</span>
+        </div>
+
+        <input type="file" id="jdFile" accept=".pdf,.doc,.docx,.txt">
+
+        <textarea id="jdText" placeholder="Paste job description..."></textarea>
+
+        <!-- Button -->
+        <button class="analyze-btn" onclick="analyzeMatch()">
+            🔍 Analyze Match
+        </button>
+
+        <!-- 🔄 LOADER -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- 📊 RESULT SECTION -->
+        <div id="result" class="hidden">
+
+            <!-- Score -->
+            <div class="score-circle">
+                <span id="scoreText">0%</span>
+            </div>
+
+            <!-- Matched Skills -->
+            <h3>✅ Matched Skills</h3>
+            <ul id="matched"></ul>
+
+            <!-- Missing Skills -->
+            <h3>❌ Missing Skills</h3>
+            <ul id="missing"></ul>
+
+            <!-- AI Suggestions -->
+            <div id="aiSuggestions" class="hidden">
+                <h3>🤖 AI Suggestions</h3>
+                <ul id="suggestionList"></ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- JS -->
+<script src="/app.js"></script>
+
+</body>
+</html>

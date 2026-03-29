@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #6a00f4, #3f00ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* =====================
+   MAIN CONTAINER
+===================== */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* REMOVE LEFT PANEL COMPLETELY */
+.left {
+    display: none;
+}
+
+/* =====================
+   CARD (MAIN UI)
+===================== */
+.card {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+/* =====================
+   HEADER TITLE (OPTIONAL)
+===================== */
+.main-title {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* =====================
+   FORM
+===================== */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.section-header span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6a00ff;
+}
+
+.section-header small {
+    font-size: 14px;
+    color: #777;
+}
+
+/* FILE INPUT */
+input[type="file"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    height: 120px;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.analyze-btn {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.analyze-btn:hover {
+    transform: scale(1.05);
+}
+
+/* =====================
+   LOADER
+===================== */
+.loader {
+    margin: 30px auto;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top: 5px solid #6a00ff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* =====================
+   SCORE
+===================== */
+.score-circle {
+    width: 140px;
+    height: 140px;
+    margin: 30px auto;
+    border-radius: 50%;
+    background: #4caf50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* =====================
+   AI SUGGESTIONS
+===================== */
+.ai-box {
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+}
+
+.ai-box h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ai-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.ai-box li {
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+/* =====================
+   SKILLS
+===================== */
+.skills-row {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skills-box {
+    flex: 1;
+}
+
+.big {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.green { color: #2e7d32; }
+.red { color: #c62828; }
+
+.skill-pills {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-pills li {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* MATCHED */
+.skills-box .green ~ .skill-pills li {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+/* MISSING */
+.skills-box .red ~ .skill-pills li {
+    background: #ffebee;
+    color: #c62828;
+}
