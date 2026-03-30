@@ -1,4 +1,6 @@
-<h1 align="center">🚀 Resume Analyzer (ATS-Style)</h1>
+
+
+# 🚀 Resume Analyzer (ATS-Style)
 
 <p align="center">
 <b>
@@ -12,42 +14,51 @@ A full-stack ATS-style Resume Analyzer that compares resumes with job descriptio
 
 ---
 
-## 📘 **PROJECT OVERVIEW**
----
+## 📘 PROJECT OVERVIEW
 
 Modern companies rely on **Applicant Tracking Systems (ATS)** to filter resumes before a human recruiter ever reviews them. These systems primarily use keyword matching, skill alignment, and formatting rules, often rejecting qualified candidates without providing any feedback.
 
-This project simulates **real-world ATS screening behavior** by analyzing resumes against job descriptions. It extracts and normalizes resume content, compares skills using an ATS-style repository, calculates a match percentage, identifies missing skills, and generates **AI-style resume improvement suggestions**—helping candidates understand ATS decisions and optimize their resumes before applying.
+This project simulates **real-world ATS screening behavior** by:
+
+* Extracting and normalizing resume content
+* Comparing skills using an ATS-style repository
+* Calculating match percentage
+* Identifying missing skills
+* Generating **AI-style improvement suggestions**
+
+👉 The goal is to help candidates understand ATS decisions and optimize their resumes before applying.
 
 ---
 
-## ⭐ **FEATURES**
----
+## ⭐ FEATURES
 
 <table width="100%">
 <tr>
 <td width="33%" align="center" valign="top">
 
-### 📄 **ATS Resume Matching**
-Resume vs Job Description  
-Keyword-based evaluation  
-Real ATS-style logic  
+### 📄 ATS Resume Matching
+
+* Resume vs Job Description
+* Keyword-based evaluation
+* Real ATS-style logic
 
 </td>
 <td width="33%" align="center" valign="top">
 
-### 🔍 **Skill Gap Analysis**
-Matched skills  
-Missing skills  
-Clear visual feedback  
+### 🔍 Skill Gap Analysis
+
+* Matched skills
+* Missing skills
+* Clear visual feedback
 
 </td>
 <td width="33%" align="center" valign="top">
 
-### 📁 **Multi-Format Support**
-PDF resumes  
-DOCX resumes  
-Pasted text input  
+### 📁 Multi-Format Support
+
+* PDF resumes
+* DOCX resumes
+* Pasted text input
 
 </td>
 </tr>
@@ -55,26 +66,29 @@ Pasted text input
 <tr>
 <td width="33%" align="center" valign="top">
 
-### 🤖 **AI Resume Suggestions**
-Improvement tips  
-Skill highlighting  
-Recruiter-style feedback  
+### 🤖 AI Resume Suggestions
+
+* Improvement tips
+* Skill highlighting
+* Recruiter-style feedback
 
 </td>
 <td width="33%" align="center" valign="top">
 
-### 📊 **Match Percentage Scoring**
-ATS-style scoring  
-Quick evaluation  
-Easy comparison  
+### 📊 Match Percentage Scoring
+
+* ATS-style scoring
+* Quick evaluation
+* Easy comparison
 
 </td>
 <td width="33%" align="center" valign="top">
 
-### 🎯 **Transparent ATS Insights**
-No black-box decisions  
-Explainable results  
-Real screening behavior  
+### 🎯 Transparent ATS Insights
+
+* No black-box decisions
+* Explainable results
+* Real screening behavior
 
 </td>
 </tr>
@@ -82,33 +96,63 @@ Real screening behavior
 
 ---
 
-## 🛠️ **TECH STACK**
+## 🛠️ TECH STACK
 
-<table width="100%" align="center"> <tr> <td width="33%" valign="top" align="center">
-🔧<h2>BACKEND</h2> 
+<table width="100%">
+<tr>
 
-<b><i>Business logic, ATS processing, APIs</i></b>
+<td width="33%" valign="top" align="center">
 
-<ul align="left"> <li><b>Java 17</b></li> <li><b>Spring Boot</b></li> <li><b>REST APIs</b></li> <li><b>Apache PDFBox</b> (PDF parsing)</li> <li><b>Apache POI</b> (DOCX parsing)</li> <li><b>Maven</b></li> </ul> </td> <td width="33%" valign="top" align="center">
-🎨 <h2>FRONTEND</h2>
+### 🔧 BACKEND
 
-<b><i>User interface & client-side logic</i></b>
+<i>Business logic, ATS processing, APIs</i>
 
-<ul align="left"> <li><b>HTML</b></li> <li><b>CSS</b></li> <li><b>JavaScript</b></li> <li><b>Fetch API</b></li> </ul> </td> <td width="33%" valign="top" align="center">
-🧰<H2>TOOLS & UTILITIES</H2> 
+* Java 17
+* Spring Boot
+* REST APIs
+* Apache PDFBox (PDF parsing)
+* Apache POI (DOCX parsing)
+* Maven
 
-<b><i>Development, testing & configuration</i></b>
+</td>
 
-<ul align="left"> <li><b>Git & GitHub</b></li> <li><b>Postman</b></li> <li><b>VS Code / IntelliJ</b></li> <li><b>application.properties</b></li> <li><b>pom.xml</b></li> </ul> </td> </tr> </table>
+<td width="33%" valign="top" align="center">
+
+### 🎨 FRONTEND
+
+<i>User interface & client-side logic</i>
+
+* HTML
+* CSS
+* JavaScript
+* Fetch API
+
+</td>
+
+<td width="33%" valign="top" align="center">
+
+### 🧰 TOOLS & UTILITIES
+
+<i>Development, testing & configuration</i>
+
+* Git & GitHub
+* Postman
+* VS Code / IntelliJ
+* application.properties
+* pom.xml
+
+</td>
+
+</tr>
+</table>
 
 ---
-## 🏗️ **SYSTEM ARCHITECTURE**
----
+
+## 🏗️ SYSTEM ARCHITECTURE
 
 <p align="center">
-  <img src="img/Architecture.png" width="300%" height="900" />
+  <img src="img/Architecture.png" width="100%" />
 </p>
-
 
 <p align="center">
 <i>
@@ -116,121 +160,35 @@ End-to-end ATS workflow showing resume upload, document parsing, text normalizat
 </i>
 </p>
 
------
-
-
-
-## 🖥️ **FRONTEND SCREENS & USER EXPERIENCE**
 ---
 
+## 🖥️ FRONTEND SCREENS & USER EXPERIENCE
 
 <table width="100%">
 <tr>
 <td align="center" valign="top">
 
-<h3>🌐 Application Interface</h3>
+### 🌐 Application Interface
 
-<p align="center">
-  <img src="./img/webpage.png" width="80%" />
-</p>
-
-<p>
-<i>
-Clean and interactive UI where users upload resumes, enter job descriptions, and get instant ATS-style analysis including match score, skill gaps, and suggestions.
-</i>
-</p>
+<img src="img/webpage.png" width="80%" />
 
 </td>
 </tr>
 </table>
 
------------------
+---
 
-**<h2>🧾 SUMMARY </h2>**
-
-Resume Analyzer (ATS-Style) is a **full-stack** application that simulates how real Applicant Tracking Systems evaluate resumes. The system **parses** resumes in PDF, DOCX, or text format, compares skills against job descriptions, calculates match percentage, identifies skill gaps, and **generates AI-style** resume **improvement** suggestions. A clean, user-friendly **frontend**presents results clearly, helping candidates understand ATS decisions and **optimize** resumes for better screening outcomes.
-
--------------
-
-<h3>📂 PROJECT STRUCTURE</h3>
+## 📂 PROJECT STRUCTURE
 
 ```
-RESUME-ANALYZER/
 ├── src/
-│   ├── main/
-│   │   ├── java/com/yourpackage/resumeanalyzer/
-│   │   │   ├── controller/
-│   │   │   │   ├── HomeController.java
-│   │   │   │   └── ResumeController.java
-│   │   │   ├── service/
-│   │   │   │   ├── ResumeAnalyzerService.java
-│   │   │   │   ├── TextExtractor.java
-│   │   │   │   └── SkillRepository.java
-│   │   │   ├── model/
-│   │   │   │   └── AnalysisResult.java
-│   │   │   └── ResumeAnalyzerApplication.java
-│   │   └── resources/
-│   │       ├── static/
-│   │       │   ├── index.html
-│   │       │   ├── app.js
-│   │       │   └── styles.css
-│   │       └── application.properties
-│   └── test/
+│   └── main/
 │       └── java/com/yourpackage/resumeanalyzer/
 ├── img/
 │   ├── Architecture.png
 │   ├── webpage.png
-│   
-│   
 ├── pom.xml
-├── mvnw
-└── README.md
 ```
---------
 
-<H2>🛠️ RUNNING LOCALLY</H2>
-
-**1️⃣ Clone the Repository**
-```
-git clone https://github.com/Niroj7/RESUME-ANALYZER.git
-cd RESUME-ANALYZER
-```
-**2️⃣ Prerequisites**
----------
-
-**Ensure the following are installed on your system**
-
-**1.** **_Java 17 or higher_**
-
-**2.** **_Maven_**
-
-**3.** **_Git_**
-```
-java -version
-mvn -version
-```
------------
-**3️⃣ Build the Application**
-
-```
-mvn clean install
-```
-**4️⃣ Run the Spring Boot Application**
-```
-mvn spring-boot:run
-```
-**5️⃣ Access the Application**
-----------
-
-**_Backend API runs at:_**
-```
- http://localhost:8081
-```
-**Open the frontend by visiting:**
-```
-http://localhost:8081/index.html
-```
---------
-
-**✨ Happy learning and exploring — thanks for visiting this project! 🚀**
+---
 
