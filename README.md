@@ -168,13 +168,6 @@ End-to-end ATS workflow showing resume upload, document parsing, text normalizat
 <tr>
 <td align="center" valign="top">
 
-### 🌐 Application Interface
-
-<img src="img/webpage.png" width="80%" />
-
-</td>
-</tr>
-</table>
 
 ---
 
